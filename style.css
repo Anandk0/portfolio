@@ -1,0 +1,725 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Sanchez&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Gochi+Hand&family=Sanchez&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Sanchez&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #011627;
+    overflow-x: hidden;
+    
+ 
+}
+
+
+body::-webkit-scrollbar {
+    display: none; /* Hide scroll bar */
+  }
+  
+
+nav {
+    /* background-image: linear-gradient(rgba(0, 0, 0,0.7),rgba(0, 0, 0, 0.7)),url("https://mydandelitrip.com/assets/images/resort/wildernest/img3.jpg"); */
+    background-color: transparent;
+    margin: 0;
+    padding: 0 2%;
+    width: 100%;
+    overflow: hidden;
+    box-sizing: border-box;
+    
+}
+
+
+nav.navigation ul.nav1 li {
+    transition: 0.5s;
+    float: left;
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+
+nav.navigation ul.nav1 li {
+    opacity: 1;
+    list-style: none;
+}
+
+p {
+    font-size: 25px;
+    line-height: 1.2;
+    font-family: 'Acme', sans-serif;
+    font-family: 'Sanchez', serif;
+}
+
+.navlinks ul li:hover::after {
+    width: 100%;
+    transition: 0.2s;
+}
+
+nav.navigation ul.nav1 li a {
+    text-decoration: none;
+    display: block;
+    padding: 14px;
+    text-transform: uppercase;
+    /* font-size: 20px; */
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    font-weight: 500;
+    border-radius: 7px;
+    /* box-shadow: 0px 5px 10px 0px rgba(0,255,255,0.7);  */
+}
+
+nav.navigation ul.nav1 li a:hover{
+    color: rgba(0, 0, 0, 0.434);
+    background-color: rgba(101, 94, 94, 0.3);
+    color: #000;
+    box-shadow: inset 0px 2px 4px rgba(0,0,0,0.15), 
+                inset 0px 4px 8px rgba(0,0,0,0.15), 
+                inset 0px 8px 16px rgba(0,0,0,0.15);
+    transition: 0.2s;
+    transform: translateY(2px);
+}
+
+
+nav.navigation ul.nav1 li.dropdownicon {
+    display: none;
+}
+
+nav.navigation div.title h1{
+    font-size: 1.5rem;
+}
+nav.navigation div.title{
+    position: absolute;
+    top: 2%;
+    
+}
+
+nav.navigation div.title h1{
+    font-size: 2rem;
+
+}
+nav.navigation ul.nav1{
+    float: right;
+    margin-top: 1%;
+}
+
+
+
+
+p{
+    color:aliceblue;
+    overflow: hidden;
+    box-sizing: border-box;
+
+}
+
+ul{
+    overflow: hidden;
+    box-sizing: border-box;
+    align-items: left;
+}
+
+.textboxes{
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 5%;
+
+    box-sizing: border-box;
+    overflow: hidden;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+
+section.row.text-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.textboxes span.typedtext{
+    font-size: 35px;
+    font-weight: 600;
+}
+
+
+
+@media screen and (max-width: 1000px) {
+
+    
+
+    div.title img{
+        width: 25px;
+    }
+
+    nav.navigation ul.nav1{
+    float:none;
+}
+
+
+    nav.navigation ul.nav1 li{
+        display:none;
+    }
+
+    nav.navigation ul.nav1 li.dropdownicon {
+        display:block;
+        float: right;
+        background-color: rgba(19, 209, 209, 0.463);
+    }
+
+
+    nav.navigation ul.nav1.responsive li.dropdownicon {
+        position: fixed;
+        top: 0%;
+        right: 2%;
+    }
+
+    nav.navigation ul.nav1.responsive li {
+
+        display: inline;
+        float: none;
+        transition: cubic-bezier() 0.5s;
+    }
+
+    nav.navigation ul.nav1.responsive li a {
+        display: block;
+        text-align: left;
+    }
+
+    nav.navigation ul.nav1.responsive li a.title{
+        text-transform: none;
+    }
+   
+    nav.navigation div.title h1{
+        font-size: 1.2rem;
+    }
+}
+
+.skill{
+    display: flex;
+    justify-content: space-between; 
+    width: 70%;
+    /* align-items: left; */
+}
+.skill .skill-name, .skill .progress-bar{
+    /* width: ; */
+    margin: 10px 0;
+    display: inline-block;
+    vertical-align: middle;
+
+}
+.progress-bar {
+    width: 400px;
+    height: 25px;
+    background-color: #e0e0e0;
+    border-radius: 7px;
+    margin: 10px auto;
+    display: inline-block;
+    vertical-align: middle;
+    border: 1px solid #fff;
+  }
+  
+  .progress-bar-fill {
+    height: 100%;
+    background-color: #3f3f3f;
+    border-radius: 7px;
+    width: 50%; 
+    transition: width 2s ease-in-out;
+  }
+
+  .skill-name, .progress-bar {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 5px;
+    margin-right: 15px;
+  }
+  
+
+
+  .skill-name {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 5px; 
+    margin-right: 15px;
+    color: darkolivegreen;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: 'Acme', sans-serif;
+    font-family: 'Sanchez', serif;
+    }
+    
+    div.btn{
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-left: 0%;
+    margin-right: 5%;
+    padding: 5%;
+    box-sizing: border-box;
+    overflow: hidden;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+div.btn a{
+    text-decoration: none;
+    color: #fff;
+    background-color: #1d4561;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+@media screen and (max-width: 1000px) {
+    .skill{
+        margin-top: 2%;
+        display: block;
+        width: 100%;
+    }
+    .skill .skill-name, .skill .progress-bar{
+        width: 100%;
+    }
+    .progress-bar {
+        width: 100%;
+    }
+    .progress-bar-fill {
+        width: 100%;
+    }
+    div.btn{
+        margin-left: 0%;
+    }
+
+}
+
+
+
+
+.profile {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: #333;
+    background-image: url("images/yeti3.jpeg");
+    background-size: cover;
+    background-position: center;
+    box-shadow: inset 0px 0px 150px 166px rgba(0,0,0,0,1);
+    display: block;
+    margin: 0 auto;
+  }
+  
+.profile2 {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: #333;
+    background-image: url("images/yeti3.jpeg");
+    background-size: cover;
+    background-position: center;
+    box-shadow: inset 0px 0px 150px 166px rgba(0,0,0,0,1);
+    display: block;
+    margin: 0 auto;
+  }
+  .profile2:hover{
+    background-image: url("images/teeth.jpeg");
+    /* animation: depak 5s infinite; */
+  }
+ @keyframes depak {
+    10%{
+        background-image: url("https://tenor.com/view/bhik-mangya-deepak-kalal-kya-dekh-raha-hai-bhikari-kya-re-bhikmanga-gif-24874935");
+    }
+    
+    20%{
+        background-image: url("teeeth.jpeg");
+    }
+ }
+
+section.additional div.textboxes h2{
+    font-size: 2rem;
+    font-family: 'Acme', sans-serif;
+    font-family: 'Sanchez', serif;
+    color: #fff;
+    font-weight: 600
+}
+
+.projects {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+.card {
+    width: 500px;
+    height: auto;
+    background-color: #1a3143;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    overflow: hidden;
+    position: relative;
+    transition: 0.5s;
+    margin-bottom: 5%;
+    margin-top: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 2%;
+    box-sizing: border-box;
+    overflow: hidden;
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+
+
+  .card .btn{
+   background-color: #1d4561; 
+  }
+
+
+  div.aboutme{
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 5%;
+    box-sizing: border-box;
+    overflow: hidden;
+    box-sizing: border-box;
+    overflow: hidden;
+    text-align: center;
+    display: block;
+    margin: auto;
+}
+
+
+
+
+/* /////////////////////////////////about section////////////////////////////////////////// */
+
+div.abtmepage .headshot{
+    padding: 5% 2%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+div.abtmepage .headshot .textbox,div.abtmepage .headshot.profileimg{
+    width: 50%;
+    display: inline-block;
+}
+
+
+.heading{
+    font-size: 2rem;
+    font-family: 'Acme', sans-serif;
+    font-family: 'Sanchez', serif;
+    color: #fff;
+    font-weight: 600;
+    margin-top: 1%;
+}
+
+table{
+    color: #fff;
+}
+
+table tr{
+    border-bottom: 1px solid #fff;
+}
+
+
+table tr td{
+    padding: 10px 15px;
+    font-size: 20px;
+    font-family: 'Acme', sans-serif;
+    font-family: 'Sanchez', serif;
+    font-weight: 600;
+}
+
+.education div.box{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: auto;
+    margin-left: 5%;
+    margin-right: 5%;
+    box-sizing: border-box;
+    overflow: hidden;
+
+}
+
+
+.box{
+    padding: 2% 1%;
+    margin: 2% 1%;
+}
+
+.hobbies .container .headshot{
+    padding: 5% 2%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+.hobbies .container .headshot .imgside,.hobbies .container .headshot .textbox{
+    width: 50%;
+    padding: 5%;
+    border-radius: 10px;
+}
+
+/* .hobbies .container .headshot .imgside img{
+    width: 100%;
+    height: auto;
+} */
+
+.hobbies .container .headshot .imgside{
+    /* padding: 5%; */
+    border-radius: 10%;
+    background-color: #e0e0e0;
+}
+
+@media screen and (max-width: 1000px) {
+  div.abtmepage .headshot .textbox,div.abtmepage .headshot.profileimg{
+    display: block;
+    width: 100%;
+    margin-top: 10%;
+
+
+    margin-top: 10%;
+
+}
+
+div.abtmepage .headshot .textbox,div.abtmepage .headshot{
+    flex-direction: column-reverse;
+    justify-content: space-between;
+}
+
+.hobbies .container .headshot .imgside,.hobbies .container .headshot .textbox{
+    /* display: block; */
+    width: 100%;
+    margin-top: 10%;
+}
+.hobbies .container .headshot .imgside{
+    /* padding: 5%; */
+    height: 500px;
+    border-radius: 10%;
+    background-color: #e0e0e0;
+    background-size: cover;
+}
+
+.hobbies .container .headshot.trek{
+    flex-direction: column-reverse;
+    justify-content: space-between;
+}
+
+}
+
+
+
+/* //////////////////////projects//////////////// */
+
+div.project1{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #1d1e22;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    box-shadow: 10px 10px 20px rgba(0,0,0,0.5);
+    box-shadow: inset 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+div.project1 .image img{
+    width: 100%;
+    height: auto;
+}
+
+div.project1 .image {
+    padding: 1% 2%;
+}
+
+div.project1 .image .imgc{
+    padding: 2% 2%;
+    box-shadow: inset 0px 5px 10px 0px rgba(0, 0, 0, 0.7);
+
+}
+
+div.project1 .image ,div.project1 .info{
+    width: 50%;
+    /* padding: 2% 5%; */
+    
+}
+
+
+div.scroll{
+    overflow: scroll;
+    height: 500px;
+    width: 100%;
+    color:rgb(193, 199, 199);
+    /* background-color:#fff; */
+    /* box-shadow: inset 0px 5px 10px 0px rgba(0, 0, 0, 0.5); */
+}
+
+div.scroll::-webkit-scrollbar {
+    background-color: #000;
+}
+
+div.scroll::-webkit-scrollbar-thumb{
+    background-image: url("https://img.freepik.com/free-vector/abstract-pixel-rain-background_23-2148365108.jpg?w=1060&t=st=1694800891~exp=1694801491~hmac=57bb2b82bea5458c25bc97a038b8f894d7397341e571a560715dced003214fc1");
+    background-size: cover;
+    border-radius: 10px;
+}
+
+ div.label2{
+    padding: 2%;
+    box-shadow: inset 0px 5px 10px 0px rgba(0, 0, 0, 0.7);
+    border-radius: 50px;
+    width: max-content;
+}
+
+
+
+.active{
+    color: rgba(0, 0, 0, 0.434);
+    background-color: rgba(101, 94, 94, 0.3);
+    color: #000;
+    box-shadow: inset 0px 2px 4px rgba(0,0,0,0.15), 
+                inset 0px 4px 8px rgba(0,0,0,0.15), 
+                inset 0px 8px 16px rgba(0,0,0,0.15);
+    transition: 0.2s;
+    transform: translateY(2px);
+}
+
+@media screen and (max-width: 1000px) {
+    div.project1 .image ,div.project1 .info{
+        width: 100%;
+    }
+    div.project1 .image{
+        padding: 2% 5%;
+    }
+    div.project1 .info{
+        padding: 2% 5%;
+    }
+    div.project1 .image .imgc{
+        padding: 2% 5%;
+    }
+    div.project1 .image img{
+        width: 100%;
+        height: auto;
+    }
+    div.project1 .info .label2{
+        width: 100%;
+    }
+    div.project1 .info .label2 .label1{
+        width: 100%;
+    }
+
+   
+    
+}
+
+
+/* /////////////////////////contact//////////////////////////// */
+
+
+div.container.forms div.form-container{
+    display:flex ;
+    justify-content: center;
+    padding: 2% 5%;
+}
+
+.form-container form{
+    width:50%;
+    
+}
+
+.form-container input,.form-container textarea{
+    width:100%;
+    padding: 5px 10px;
+    background-color: rgb(92, 88, 88);
+    border-radius: 10px;
+    margin-bottom: 4%;
+
+}
+
+.form-container input,.form-container span.form-span{
+    display: inline-block;
+}
+.form-container span.form-span{
+    color: #e0e0e0;
+    font-family: 'Acme', sans-serif;
+    font-family: 'Sanchez', serif;
+}
+
+section.scocial-meadia div.icons{
+    width: 100%;
+    display: flex;
+    /* justify-content:center; */
+    /* flex-basis: 33.33%; */
+}
+section.scocial-meadia div.icons img{
+    width: 100%;
+}
+
+section.scocial-meadia div.icon-container{
+    padding: 10% 2% 5% 2%;
+}
+
+@media screen and (max-width:1000px) {
+    .form-container form{
+        width:100%;
+    }
+}
+/* //////////////////////////footer//////////////////////////// */
+  .footer{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    color: #fff;
+
+    font-size: 14px;
+    font-weight: 300;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: 10%;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    padding-top: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+    box-sizing: border-box;
+
+}
+
+.footer ul li{
+    list-style: none;
+    line-height: 250%;
+
+}
+
+.footer ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 300;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    overflow: hidden;
+    box-sizing: border-box;
+    padding: 10px 30px;
+}
+
+footer{
+    background-color: #1a3143;
+    padding: 1% 0;
+}
+
+
+

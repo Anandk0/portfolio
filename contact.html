@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css\bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous"> -->
+  </head>
+  <body>
+    <!-- portfolio nav bar -->
+    <header>
+      <nav class="navigation navbar-dark bg-dark">
+        <div class="title" id="title">
+          <h1 style="color:whitesmoke"> mAD_dEVELOPER</h1>
+        </div>
+                    <ul id="icon" class="nav1">
+                      <li><a href="index.html">home</a></li>
+                      <li><a href="project.html">projects</a></li>
+                      <li class="right"><a href="about.html">about</a></li>
+                      <li class="right"><a href="contact.html" class="active">contact</a></li>
+                      <li class="dropdownicon" onclick="menu()"><a href="#">&#9776;</a></li>
+                      
+                    </ul>
+                  </nav>
+                  
+                </header>
+                
+                <div class="container forms">
+                    <div class="form-container">
+                     
+                      <form id="form" method="post">
+
+
+                            <label for="form"><h2 style="color: whitesmoke;"><u>Drop Message</u></h2></label>
+                          <div class="name-input">
+                            <span class="form-span">
+                                <h4>Name</h4>
+                            </span>
+                            <input type="text" required name="name" maxlength="25" placeholder="Enter Your Name">
+                          </div>
+                          <span class="form-span">
+                            <h4>Email</h4>
+                        </span>
+                          <div class="email-input">
+                            <input type="email" required name="email" maxlength="25"  placeholder="Enter Your Email">
+                          </div>
+                          <span class="form-span">
+                            <h4>Comments</h4>
+                        </span>
+                          <div class="comment-input">
+                            <textarea name="comments"  cols="30" rows="10" required  placeholder="Use good Comments Else my reply will be very Harsh too!!😊😊"></textarea>
+                          </div>
+                          <button type="submit" name="submit" class="submit-input">Submit</button>
+
+                          </form>
+                    </div>
+                </div>
+                
+
+                <section class="scocial-meadia container" id="icons1">
+                    <div class="jumbotron" style="background-color: #1d1e22;  box-shadow: inset 0px 2px 4px rgba(0,0,0,0.15);">
+                        <h2 style="text-align: center;" class="heading">sCOCIAL - mEADIA</h2>
+                    </div>
+                    <div class="icon-container">
+                        <div class="icons">
+                            <div class="img">
+                              <a href="https://www.facebook.com/profile.php?id=100020441413491" style="text-decoration: none; " draggable="false"> <img src="images/facebook.png" alt="" draggable="false"></a> 
+
+                            </div>
+                            <div class="img">
+                                <a href="discordapp.com/users/969639999102402601" style="text-decoration: none;" draggable="false">  <img src="images/discord.png" alt="" draggable="false"></a> 
+
+                            </div>
+                            <div class="img">
+                                <a href="https://www.instagram.com/a_n_a_n_d______________/" style="text-decoration: none;" draggable="false" draggable="false">  <img src="images/instagram.png" alt="" draggable="false"></a> 
+
+                            </div>
+                            <div class="img">
+                                <a href="mailto:anandck89@gmail.com" style="text-decoration: none;" draggable="false">  <img src="images/gmail.png" alt="" draggable="false"></a> 
+                                
+                            </div>
+                            <div class="img">
+                                
+                                <a href="https://twitter.com/anand_kulkarni1/" style="text-decoration: none;" draggable="false">  <img src="images/twitter.png" alt="" draggable="false"></a> 
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <footer>
+                   <div class="container footer">
+                   
+                       <div class="footer2">
+                         <ul>
+                               <li><a href="index.html">home</a></li>
+                               <li><a href="project.html">projects</a></li>
+                               <li><a href="about.html">about</a></li>
+                               <li><a href="contact.html">contact</a></li>
+                           </ul>
+                       </div>
+                       <div class="footer3">
+                         <ul>
+                           <li><a href="#">facebook</a></li>
+                           <li><a href="https://www.instagram.com/a_n_a_n_d______________/">instagram</a></li>
+                           <li><a href="#">twitter</a></li>
+                           <li><a href="#">linkedin</a></li>
+                           </ul>
+                         </div>
+                       </div>
+                </footer>
+
+
+
+
+
+  </body>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script>
+    function menu() {
+  var xy = document.getElementById("title");
+    var x = document.getElementById("icon");
+    if (x.className === "nav1") {
+        x.className += " responsive";
+        xy.style.display = "none";
+    } else {
+      x.className = "nav1";
+        xy.style.display = "inline";
+      }
+
+
+}
+
+function errors(){
+    alert('Something went wrong!! \n Please try ScocialMeadia handles...');
+    window.location('contact.html#icons1');
+}
+// var typed = new Typed('#puc', {
+//   strings: ['harward university..','Kittle Pu Science College..'],
+//   typeSpeed: 100,
+// });
+
+
+
+////////////////////////////////////////////////////////////
+
+
+// Get the form element by its id
+const form = document.getElementById("form");
+
+// Add an event listener for form submission
+form.addEventListener("submit", function(event) {
+  // Prevent the default form behavior
+  event.preventDefault();
+
+  // Create a new FormData object from the form data
+  const formData = new FormData(form);
+
+  // Create a new URLSearchParams object from the FormData object
+  const urlSearchParams = new URLSearchParams(formData);
+
+  // Convert the URLSearchParams object to a string
+  const data = urlSearchParams.toString();
+
+  // Create a new XMLHttpRequest object
+  const xhr = new XMLHttpRequest();
+
+  // Define the URL of the PHP file that will handle the form data
+  const url = "https://anandck89.000webhostapp.com/process.php";
+
+  // Open a POST request to the URL
+  xhr.open("POST", url);
+
+  // Set the request header to indicate the data type
+  xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+
+  // Define what happens on successful data submission
+  xhr.onload = function() {
+    // Check if the status code is 200 (OK)
+    if (xhr.status === 200) {
+      // Display a success message
+      alert("Your message has been sent successfully.");
+    } else {
+      // Display an error message
+      alert("There was an error sending your message.");
+    }
+  };
+
+  // Send the data to the server
+  xhr.send(data);
+});
+
+
+
+
+
+
+
+
+
+
+</script>
+
+   
+     </html
