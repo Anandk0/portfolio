@@ -7,9 +7,11 @@
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <link rel="stylesheet" href="css\bootstrap.css">
     <link rel="stylesheet" href="style.css">
+                
     <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous"> -->
   </head>
   <body>
+
     <!-- portfolio nav bar -->
     <header>
       <nav class="navigation navbar-dark bg-dark">
@@ -29,13 +31,14 @@
     </header>
     <div class="container">
         <section class="row text-box">
-          <div class="textboxes">
-            <p>
+          <div class="container fixed">
+            <p style="text-align: center;">
               <span class="typedtext"></span>
               
             </p>
           </div>
           <div class="container-fluid" style="margin-left: 5%;"> 
+            <h2 style="color: rgb(220, 218, 218); font-weight: 300; text-decoration: underline;">My Skills</h2>
           <ul>
             <li>
               <div class="skill" >
@@ -44,28 +47,32 @@
                   <div class="progress-bar-fill" id="backe"></div>
                 </div>
               </div>
-              
+              </li>
+              <li>
               <div class="skill" >
                         <span class="skill-name">HTML/css</span>
                         <div class="progress-bar">
                           <div class="progress-bar-fill" id="html"></div>
                         </div>
                       </div>
-                      
+                    </li>
+                    <li>    
                       <div class="skill" >
                         <span class="skill-name">js</span>
                         <div class="progress-bar" >
                           <div class="progress-bar-fill" id="js"></div>
                         </div>
                       </div>
-                      
+                    </li>
+                    <li>
                       <div class="skill">
                         <span class="skill-name">EXPRESS</span>
                         <div class="progress-bar">
                           <div class="progress-bar-fill" id="express"></div>
                         </div>
                       </div>
-                      
+                    </li>
+                    <li>
                       <div class="skill">
                         <span class="skill-name">DSA</span>
                         <div class="progress-bar">
@@ -85,8 +92,8 @@
       <hr color="white">
       <section class="container additional">
         <div class="textboxes">
-        <h2 style="text-align: center; color: aliceblue;">
-          MY projects
+        <h2 style="text-align: center; color: aliceblue; height: 39px;" id="myprojects">
+          <u>MY projects
         </h2>
         </div>
 
@@ -212,15 +219,19 @@
 
 
     var typed = new Typed('.typedtext', {
-      strings: [`/**  <br>Hey <br>Welcome to the portfolio website of a creative genius who can do anything from writing code to making art.`,' Whether you are looking for a professional collaboration, a friendly chat, or a dose of inspiration, you have come to the right place.' ,` Please explore my work and enjoy my sense of humor. 😊**/`],
+      strings: [`<br>Hey <br> `,`/** Welcome to the portfolio website of a creative genius who can do anything from writing code to making art.**/`,' /** Whether you are looking for a professional collaboration, a friendly chat, or a dose of inspiration, you have come to the right place.**/','/** now enjoy the website **/'],
       typeSpeed: 50,
     });
     
     var typed = new Typed('#abtmetext', {
       strings: ['About Me','aBOUT mE','About Me'],
-      typeSpeed: 100,
+      typeSpeed: 50,
     });
-
+    
+    var typed = new Typed('#myprojects', {
+      strings: ['My Projects','mY pROJECTS','My Projects'],
+      typeSpeed: 50,
+    });
 //////////////////////////////////////////////////////
     var sound = document.getElementById("sound");
 var audio = document.getElementById("audio");

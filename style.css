@@ -131,6 +131,17 @@ ul{
     box-sizing: border-box;
     overflow: hidden;
 }
+.fixed{
+    height: 91vh;
+    box-sizing: border-box;
+    overflow: hidden;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
 
 
 section.row.text-box {
@@ -146,6 +157,10 @@ section.row.text-box {
 }
 
 
+.fixed span.typedtext{
+    font-size: 35px;
+    font-weight: 100;
+}
 
 @media screen and (max-width: 1000px) {
 
@@ -275,8 +290,13 @@ div.btn a{
 }
 
 @media screen and (max-width: 1000px) {
+    ul{
+        margin: 0% 2% 0% 0%;
+        padding: 0% 2% 0% 0%;
+        align-content: center;
+    }
     .skill{
-        margin-top: 2%;
+        margin-top: 0%;
         display: block;
         width: 100%;
     }
@@ -292,9 +312,12 @@ div.btn a{
     div.btn{
         margin-left: 0%;
     }
+    .skill-name, .progress-bar {
+        margin: 0;
+        padding: 0;
+    }    
 
 }
-
 
 
 
@@ -376,7 +399,20 @@ section.additional div.textboxes h2{
   .card .btn{
    background-color: #1d4561; 
   }
+@media screen and (max-width: 1000px) {
+    .card{
+        width: 100%;
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+    section.additional div.profile{
+        margin-bottom: 40%;
+    }
+}
+    
 
+
+  /* /////////////////////////////////about section////////////////////////////////////////// */
 
   div.aboutme{
     margin-top: 5%;
@@ -395,8 +431,6 @@ section.additional div.textboxes h2{
 
 
 
-
-/* /////////////////////////////////about section////////////////////////////////////////// */
 
 div.abtmepage .headshot{
     padding: 5% 2%;
@@ -721,5 +755,37 @@ footer{
     padding: 1% 0;
 }
 
-
+@media screen and (max-width: 1000px) {
+    .footer{
+        display: block;
+        text-align: center;
+    }
+    .footer ul li{
+        display: inline-block;
+    }
+    .footer ul li a{
+        display: inline-block;
+    }
+    .footer ul li a{
+        padding: 10px 10px;
+    }
+    .footer ul li a::after{
+        display: none;
+    }
+    .footer ul li a::before{
+        display: none;
+    }
+    .footer ul li a:hover{
+        color: rgba(0, 0, 0, 0.434);
+        background-color: rgba(101, 94, 94, 0.3);
+        color: #000;
+        box-shadow: inset 0px 2px 4px rgba(0,0,0,0.15), 
+                    inset 0px 4px 8px rgba(0,0,0,0.15), 
+                    inset 0px 8px 16px rgba(0,0,0,0.15);
+        transition: 0.2s;
+        transform: translateY(2px);
+    }
+}
+    
+}
 
