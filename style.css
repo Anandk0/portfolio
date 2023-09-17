@@ -408,12 +408,11 @@ section.additional div.textboxes h2{
     section.additional div.profile{
         margin-bottom: 40%;
     }
-    
-    section.projects{
+    section.additional div.projects.container .card{
         display: block;
-        margin: auto;
-        align-items: center;
-        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+
     }
 }
     
@@ -556,7 +555,12 @@ div.abtmepage .headshot .textbox,div.abtmepage .headshot{
     justify-content: space-between;
 }
 
-
+.hobbies .container .headshot{
+   margin-top: 25%;
+}
+section.education div.box{
+    margin-top: 25%;
+}
 
 }
 
