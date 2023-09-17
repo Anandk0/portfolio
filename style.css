@@ -408,6 +408,13 @@ section.additional div.textboxes h2{
     section.additional div.profile{
         margin-bottom: 40%;
     }
+    
+    section.projects{
+        display: block;
+        margin: auto;
+        align-items: center;
+        text-align: center;
+    }
 }
     
 
@@ -548,6 +555,8 @@ div.abtmepage .headshot .textbox,div.abtmepage .headshot{
     flex-direction: column-reverse;
     justify-content: space-between;
 }
+
+
 
 }
 
